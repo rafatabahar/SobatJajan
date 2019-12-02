@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ListVendor"></activity>
+        <activity android:name=".activities.ListVendorActivity"></activity>
         <activity android:name=".activities.HomeActivity" />
         <activity android:name=".activities.DetailVendorActivity" />
         <activity android:name=".activities.PesananSayaActivity" />

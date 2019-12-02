@@ -2,13 +2,16 @@ package id.ac.telkomuniversity.dph3a4.sobatjajan.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import id.ac.telkomuniversity.dph3a4.sobatjajan.R;
 import id.ac.telkomuniversity.dph3a4.sobatjajan.adapters.VendorAdapter;
 
-public class ListVendor extends AppCompatActivity {
+public class ListVendorActivity extends AppCompatActivity {
 
     ListView listView;
 
@@ -22,5 +25,11 @@ public class ListVendor extends AppCompatActivity {
         VendorAdapter adapter = new VendorAdapter(this);
 
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startActivity(new Intent(ListVendorActivity.this,DetailVendorActivity.class));
+            }
+        });
     }
 }

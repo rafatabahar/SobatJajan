@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         btnCari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,ListVendor.class));
+                startActivity(new Intent(HomeActivity.this, ListVendorActivity.class));
             }
         });
     }
