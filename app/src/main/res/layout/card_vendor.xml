@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/card_vendor_foto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_best_seller" />
+
+        <TextView
+            android:layout_toEndOf="@id/card_vendor_foto"
+            android:layout_marginStart="8dp"
+            android:id="@+id/card_makanan_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Warteg bu yuyun"/>
+
+        <TextView
+            android:layout_toEndOf="@id/card_vendor_foto"
+            android:layout_below="@id/card_makanan_nama"
+            android:layout_marginStart="8dp"
+            android:id="@+id/pesanan_saya_kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan dan minuman"/>
+
+        <TextView
+            android:id="@+id/pesanan_saya_jarak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pesanan_saya_kategori"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/card_vendor_foto"
+            android:text="0.08 KM" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
