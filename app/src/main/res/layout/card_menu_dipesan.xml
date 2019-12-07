@@ -40,7 +40,7 @@
             android:text="Rp. 10.000"/>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/card_makanan_porsi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/card_makanan_harga"

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cart_minus"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/cart_deskripsi"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="100dp"
+            android:layout_toEndOf="@+id/cart_foto"
+            android:text="-"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cart_deskripsi" />
+
+        <Button
+            android:id="@+id/cart_plus"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/cart_deskripsi"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/cart_harga"
+            android:text="+"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cart_deskripsi" />
+
+        <ImageView
+            android:id="@+id/cart_foto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_best_seller"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_deskripsi"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@+id/cart_foto"
+            android:text="Rp. 12.000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cart_foto"
+            app:layout_constraintTop_toBottomOf="@+id/cart_deskripsi" />
+
+        <TextView
+            android:id="@+id/cart_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_deskripsi"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/cart_harga"
+            android:text="3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/cart_plus"
+            app:layout_constraintStart_toEndOf="@+id/cart_minus"
+            app:layout_constraintTop_toBottomOf="@+id/cart_deskripsi" />
+
+        <TextView
+            android:id="@+id/cart_nama_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/cart_foto"
+            android:text="Ayam Penyet"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cart_foto"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_nama_item"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/cart_foto"
+            android:text="Ayam ter enak"
+            app:layout_constraintStart_toEndOf="@+id/cart_foto"
+            app:layout_constraintTop_toBottomOf="@+id/cart_nama_item" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

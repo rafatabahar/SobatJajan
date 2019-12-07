@@ -2,17 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.ac.telkomuniversity.dph3a4.sobatjajan">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo_foreground"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ListVendorActivity"></activity>
+        <activity android:name=".activities.CartActivity"></activity>
+        <activity
+            android:name=".activities.HomeActivity2"
+            android:label="@string/title_activity_home2" />
+        <activity android:name=".activities.ListVendorActivity" />
         <activity android:name=".activities.HomeActivity" />
         <activity android:name=".activities.DetailVendorActivity" />
-        <activity android:name=".activities.PesananSayaActivity" />
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.SignUpActivity" />
         <activity android:name=".activities.DetailPesananSayaActivity" />

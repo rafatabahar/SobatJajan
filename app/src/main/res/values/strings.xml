@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">SobatJajan</string>
+    <string name="app_name">Antringan</string>
+    <string name="title_activity_home2">HomeActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Pesanan Saya</string>
+    <string name="title_notifications">Profil</string>
 </resources>

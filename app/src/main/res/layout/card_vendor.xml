@@ -24,7 +24,7 @@
         <TextView
             android:layout_toEndOf="@id/card_vendor_foto"
             android:layout_marginStart="8dp"
-            android:id="@+id/card_makanan_nama"
+            android:id="@+id/card_vendor_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="17sp"
@@ -32,18 +32,18 @@
 
         <TextView
             android:layout_toEndOf="@id/card_vendor_foto"
-            android:layout_below="@id/card_makanan_nama"
+            android:layout_below="@id/card_vendor_nama"
             android:layout_marginStart="8dp"
-            android:id="@+id/pesanan_saya_kategori"
+            android:id="@+id/card_vendor_kategori"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Makanan dan minuman"/>
 
         <TextView
-            android:id="@+id/pesanan_saya_jarak"
+            android:id="@+id/card_vendor_jarak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/pesanan_saya_kategori"
+            android:layout_below="@+id/card_vendor_kategori"
             android:layout_marginStart="8dp"
             android:layout_marginTop="3dp"
             android:layout_toEndOf="@+id/card_vendor_foto"

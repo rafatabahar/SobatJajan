@@ -11,9 +11,11 @@
         android:layout_width="287dp"
         android:layout_height="57dp"
         android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -23,9 +25,11 @@
         android:layout_height="57dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_username" />
 
@@ -35,9 +39,11 @@
         android:layout_height="51dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
         android:background="#a72f4a"
         android:text="LOGIN"
         android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
@@ -54,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/pesanan_saya_textSelesai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -68,40 +74,48 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="72dp"
         android:layout_marginTop="79dp"
         android:text="Belum punya akun?"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/pesanan_saya_textSelesai"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/linkSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="79dp"
         android:text="Sign Up"
         android:textColor="#a72f4a"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/pesanan_saya_textSelesai"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="287dp"
         android:layout_height="160dp"
         android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
+        android:foregroundGravity="clip_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_antringan" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/login_google"
         android:layout_width="50dp"
         android:layout_height="80dp"
         android:layout_marginStart="20dp"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/pesanan_saya_textSelesai"
         app:layout_constraintTop_toBottomOf="@+id/signInLink"
         app:srcCompat="@drawable/ic_gmail" />
 

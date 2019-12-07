@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
@@ -10,56 +11,70 @@
     android:layout_marginRight="16dp"
     app:cardCornerRadius="16dp">
 
-    <RelativeLayout android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:padding="8dp">
 
         <ImageView
             android:id="@+id/card_menu_foto"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_best_seller" />
 
         <TextView
-            android:layout_toEndOf="@id/card_menu_foto"
-            android:layout_marginStart="8dp"
             android:id="@+id/card_menu_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/card_menu_foto"
+            android:text="Pempek palembang"
             android:textSize="17sp"
-            android:text="Pempek palembang"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toEndOf="@+id/card_menu_foto"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_toEndOf="@id/card_menu_foto"
-            android:layout_below="@id/card_menu_nama"
-            android:layout_marginStart="8dp"
             android:id="@+id/card_menu_deskripsi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pempek terbaik yang pernah ada"/>
+            android:layout_below="@id/card_menu_nama"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/card_menu_foto"
+            android:text="Pempek terbaik yang pernah ada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/card_menu_foto"
+            app:layout_constraintTop_toBottomOf="@+id/card_menu_nama" />
+
+        <Button
+            android:id="@+id/card_menu_tambah"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/card_menu_nama"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_status_selesai"
+            android:backgroundTint="#4CAF50"
+            android:text="Tambah"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/card_menu_harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/card_menu_deskripsi"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="3dp"
-            android:layout_toEndOf="@+id/card_menu_foto"
-            android:text="2 Porsi" />
+            android:layout_marginTop="16dp"
+            android:text="Rp. 12.000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/card_menu_foto"
+            app:layout_constraintTop_toBottomOf="@+id/card_menu_deskripsi" />
 
-        <Button
-            android:id="@+id/card_makanan_tambah"
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_below="@+id/card_menu_nama"
-            android:layout_marginStart="142dp"
-            android:layout_marginTop="18dp"
-            android:layout_toEndOf="@+id/card_menu_harga"
-            android:text="Tambah"
-            android:textSize="10sp" />
-
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
