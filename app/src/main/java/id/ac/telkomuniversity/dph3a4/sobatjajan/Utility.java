@@ -6,6 +6,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class Utility {
+
+    public static final String BASE_URL = "http://192.168.43.139/antringan_api/";
+
     public static void setListViewHeightBasedOnChildren(ListView listView) {
         ListAdapter listAdapter = listView.getAdapter();
         if (listAdapter == null) {

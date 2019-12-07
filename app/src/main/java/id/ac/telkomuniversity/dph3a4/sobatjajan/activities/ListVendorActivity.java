@@ -20,6 +20,7 @@ import java.util.List;
 
 import id.ac.telkomuniversity.dph3a4.sobatjajan.HttpRequest;
 import id.ac.telkomuniversity.dph3a4.sobatjajan.R;
+import id.ac.telkomuniversity.dph3a4.sobatjajan.Utility;
 import id.ac.telkomuniversity.dph3a4.sobatjajan.adapters.VendorAdapter;
 import id.ac.telkomuniversity.dph3a4.sobatjajan.model.Vendor;
 
@@ -51,7 +52,7 @@ public class ListVendorActivity extends AppCompatActivity {
         });
 
         GetVendorTask task = new GetVendorTask();
-        task.execute("http://192.168.100.37/antringan_api/Vendor/getAll");
+        task.execute(Utility.BASE_URL+"Vendor/getAll");
     }
 
     private List<Vendor> getDataVendor(){

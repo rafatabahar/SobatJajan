@@ -6,4 +6,6 @@
 
     <color name="canceled">#AA2828</color>
     <color name="onProgress">#03A9F4</color>
+
+    <color name="hitam">#000</color>
 </resources>
